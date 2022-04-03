@@ -1,0 +1,109 @@
+/*ID'S:
+ul id="menu"
+img src="#" id="logo"
+div id="buttons"
+button id="entrar"
+button id="button-cadastrar"
+-----------------------------------
+
+CONTEUDO DO SITE: 
+
+main id="conteudo-principal"
+
+*/
+
+:root{
+  --text-color: #667085;
+  --vinho: #8e2424;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+
+
+nav{
+  height:100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+img{
+  height: 100px;
+}
+
+nav > #menu{
+  list-style: none;
+  display: flex;
+  padding: 1rem 0
+}
+
+nav > #menu > .links > a{
+  color: var(--text-color);
+  font-weight: 500;
+  text-decoration: none;
+  margin-right: 2rem;
+}
+
+button {
+  padding: 0.8rem 1rem;
+  cursor: pointer; /*tipo de cursor*/
+  border: none; /*retirar a borda padrão*/
+  border-radius: 0.5rem; /*Definir bordas arredondadas*/
+  font-weight: 500; /*especifica o peso ou a intensidade da fonte (ex.: negrito).*/
+  background: none;
+  color: var(--text-color);
+  font-size: 0.9rem; /*Tamanho da fonte*/
+}
+
+#entrar{
+  font-weight: 500;
+}
+
+#button-cadastrar {
+  background-color: #8E2424;
+  color: #FFF;
+}
+
+/*:::::::::::::::::::::::::::::::::::::::::::::CONTEUDO DO SITE ::::::::::::::::::::::::::::::::::::::::::::::*/
+
+
+main{
+  display: flex;
+  justify-content: center;
+}
+#cabecalho{
+  margin-top: 80px;
+  height: 20rem;
+  width: 46rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 50px;
+  text-align: center;
+}
+
+span{
+  color: var(--vinho);
+  font-weight: 500;
+}
+
+#cabecalho > h1{
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-size: 30pt;
+}
+
